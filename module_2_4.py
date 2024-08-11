@@ -9,6 +9,10 @@ for i in range(len(numbers)):
             break
         if numbers[i] % j == 0:
                     is_primes = False
+        if numbers[i] == 1:
+            break
+    if numbers[i] == 1:
+        continue
     if is_primes == True:
         primes.append(numbers[i])
     else:
