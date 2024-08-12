@@ -3,7 +3,7 @@ primes = []
 not_primes = []
 for i in range(len(numbers)):
     is_primes = True
-    for j in 2, 3, 5, 7:
+    for j in range(2 , i) :
         if numbers[i] % j == 0 and numbers[i] == j:
             is_primes = True
             break
